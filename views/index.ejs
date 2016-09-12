@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MY APP</title>
+</head>
+<body>
+
+<h1>  My awesome CRUD application </h1>
+<form action="/comment" method="POST">
+  <input type="text" placeholder="name" name="name">
+  <input type="text" placeholder="comment" name="comment">
+  <button type="submit">Submit</button>
+</form>
+<div>
+  <h2>Replace last quote written by James with a quote written by Deanna</h2>
+  <button id="update"> Deanna is soo cool! </button>
+</div>
+<ul class="comments">
+  <% for(var i=0; i<comment.length; i++) {%>
+    <li class="comments">
+      <span><%= comment[i].name %></span>
+      <span><%= comment[i].comment %></span>
+    </li>
+  <% } %>
+</ul>
+
+<!-- this file executes post requests -->
+<script src="main.js"></script>
+</body>
+</html>

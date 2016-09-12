@@ -1,0 +1,29 @@
+{
+  "name": "mycrudapp",
+  "version": "1.0.0",
+  "description": "Simple CRUD application for funzies",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JameyStiling/simpleCRUD.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JameyStiling/simpleCRUD/issues"
+  },
+  "homepage": "https://github.com/JameyStiling/simpleCRUD#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "mongodb": "^2.2.9"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.2"
+  }
+}
